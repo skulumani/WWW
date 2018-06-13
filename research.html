@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Flight Dynamics and Control Lab - Dr. Taeyoung Lee </title>                  
+<link rel="stylesheet" media="screen, projection" href="fdcl.css" />
+
+<script src="Ani/scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
+<script src="Ani/scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
+<link href="Ani/stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+
+</head> 
+
+<body>
+<div id="wrap">
+
+<div id="header">
+<img src="gw_port_new.png" width="220">         
+<div id="logo"> 
+<p align="right"> 
+<font style="font-size:38px; font-weight:100">Flight Dynamics and Control Lab </font> </p>
+<p align="right"><font style="font-stretch: condensed; color:rgb(105,171,218); font-size:19px">Mechanical and Aerospace Engineering 
+<p align="right">School of Engineering and Applied Science</font></p>
+</div> <!-- logo -->
+</div> <!-- Header -->
+
+<div id="navbar">	
+<nav>
+	<ul>
+	<li id="research" class="active"><a href="research.html">Research</a></li>
+	<li id="experiment"><a href="experiments.html">Experiments</a></li>
+	<li id="publication"><a href="publication_y.html">Publications</a></li>
+	<li id="faculty"><a href="faculty.html">Faculty</a></li>
+	<li id="student"><a href="students.html">Students</a></li>
+	<li id="position"><a href="position.html">*Open Position</a></li>
+	</ul>
+</nav>
+</div><!-- navbar -->
+
+<div id="main">	
+<article>
+
+<aside>
+	
+<a href="https://www.facebook.com/fdcl.gwu/"><img src="fb.png" height="25"></a>
+<a href="https://www.youtube.com/channel/UCREzO49zrgcepGkLW4Qgn2Q"><img src="YouTube-logo-full_color.png" height="25"></a>
+<br>
+<a href="https://scholar.google.com/citations?user=sBBzntUAAAAJ&hl=en&oi=ao"><img src="google_scholar.png" height="25"></a>
+<a href="https://github.com/fdcl-gwu"><img src="git_hub.jpeg" height="25"></a>
+<br><br>
+
+<a href="RS.pdf">Click for Research Statement</a>
+
+<br><br>
+
+
+
+</aside>
+<p class="section"> Research </p>
+
+<br> Many interesting dynamic systems in science and engineering evolve on a nonlinear, or curved, space that cannot be globally identified with a linear vector space. Such nonlinear spaces are referred to as <i>manifolds</i>, and they appear in various mechanical systems such as a simple pendulum, rotational attitude dynamics of a rigid body, or complex multibody systems.
+
+<br> <br> Our research is focused on constructing computational geometric methods for dynamics and control of mechanical systems evolving on a nonlinear manifold. The central idea is constructing nonlinear control systems directly on nonlinear manifolds, and verifying their performances numerically by using geometric numerical integrators that preserve the underlying geometric properties of a dynamic system. All of these are expressed in a coordinate-free form to avoid any singularities, ambiguities, and complexities inherent to local parameterizations. These allow us to study non-local, large, and aggressive motions of complex dynamic systems globally in an accurate and efficient fashion over a long period.
+
+
+<p class="subsection"> Geometric Controls on a Manifold</p>
+
+Most of the existing controllers for multibody systems are based on simplified dynamics models, and they often exhibit singularities when representing complex rotational maneuvers, thereby fundamentally restricting their ability to follow nontrivial trajectories. By explicitly utilizing geometric properties on a nonlinear manifold in Lyapunov stability analysis, we can construct an intrinsic form of control systems for the complete dynamics of multibody systems, while guaranteeing almost global asymptotic stability. 
+
+<br><br> More explicitly, the following topics have been studied:
+
+<div style="margin-left:30px">
+<ul style="list-style: none">
+<li class="pubsection">Geometric Attitude Controls on SO(3)</li>
+	<ul style="list-style:none; margin-left:30px">
+	<li> <a href="paper/ACC13.2.pdf">Hybrid control for global exponential stability</a>, 
+		<a href="paper/ACC13.2.pdf">ACC13</a>,
+		IEEE TAC15
+	<li> <a href="paper/ACC11.2.pdf">Almost global exponential stability</a>,
+		<a href="paper/ACC11.2.pdf">ACC11</a>,
+		SCL11
+	<li> <a href="paper/CDC11.2.pdf">Robust adaptive tracking</a>,
+		<a href="paper/CDC11.2.pdf">CDC11</a>,
+		IEEE TCST13
+	<li> <a href="paper/CDC11.1.pdf">Stable manifold</a>,
+		<a href="paper/CDC11.1.pdf">CDC11</a>
+	</ul>
+
+<li class="pubsection">Geometric Control of Quadrotor UAV</li>
+	<ul style="list-style:none; margin-left:30px">
+	<li> <a href="paper/CDC10.pdf">Geometric tracking control</a>, 
+		<a href="paper/CDC10.pdf">CDC10</a>,
+		IFAC11
+	<li> <a href="paper/ACC12.1.pdf">Nonlinear robust tracking</a>, 
+		<a href="paper/ACC12.1.pdf">ACC12</a>,
+		AJC13
+	<li> <a href="paper/ECC13.pdf">Nonlinear PID control</a>,
+		<a href="paper/ECC13.pdf">ECC13</a>
+	<li> <a href="paper/ACC14.2.pdf">Laser-based guidance for autonomous landing</a>,
+		<a href="paper/ACC14.2.pdf">ACC14</a>
+</ul>
+
+<li class="pubsection">Autonomous Aerial Payload Transportation</li>
+	<ul style="list-style:none; margin-left:30px">
+	<li> <a href="paper/CDC13.1.pdf">Transportation of a point mass</a>
+		<a href="paper/CDC13.3.pdf">CDC13a</a>, <a href="paper/CDC13.1.pdf">CDC13b</a>
+	<li> <a href="paper/ACC14.1.pdf">Transportation of a point mass with flexible cable</a>,
+		<a href="paper/CDC12.1.pdf">CDC12</a>,
+		<a href="paper/ACC14.1.pdf">ACC14</a>
+	<li> <a href="paper/CDC14.1.pdf">Transportation of a rigid body</a>,
+		<a href="paper/CDC14.1.pdf">CDC14</a>
+	<li> <a href="">Transportation of a rigid body with flexible cable</a>,
+		<a href="">ACC15a</a>
+	<li> <a href="">Collision avoidance</a>,
+		<a href="">ACC15b</a>		
+	<li> <a href="paper/CDC14.3.pdf">Adaptive payload transportation</a>,
+		<a href="paper/CDC14.3.pdf">CDC14</a>, IMA15, IEEE TRO15
+</ul>
+
+<li class="pubsection">Spacecraft Controls</li>
+	<ul style="list-style:none; margin-left:30px">
+	<li> <a href="paper/ACC13.1.pdf">Vision-based formation control</a>, 
+		<a href="paper/ACC12.2.pdf">ACC12</a>,
+		<a href="paper/ACC13.1.pdf">ACC13</a>,
+		<a href="paper/CDC14.2.pdf">CDC14</a>,
+		IEEE TCST14
+	<li> Low-thrust attitude control with ion thruster, IEPC13
+	<li> Retrospective cost adaptive control,
+		AIAA GNC13
+</ul>
+</ul>
+</div>	
+
+
+
+
+
+<br><br>
+
+<div style="width: 380px; float:left; margin-right:10px; margin-bottom:10px">
+<iframe width="380px" height="280px" src="http://www.youtube.com/embed/cBM5DeiT_xo" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div style="width: 380px; float:left;">
+<iframe width="380px" height="280px" src="http://www.youtube.com/embed/h65IaQx_w6c" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div style="clear:both; text-align:center; margin-bottom:30px">Video: Geometric controls of a quadrotor UAV and cooperative payload transportation</div>
+
+
+
+<p class="subsection"> Computational Geometric Optimal Control </p>
+
+
+Computational geometric optimal control approach is to find an optimal control for a dynamic system represented by discrete mechanical systems. This is in contrast to the conventional approach where a discretization appears in the last stage when solving an optimality condition numerically.
+
+<br><br>
+This method has substantial computational advantages. Numerical solutions obtained by discrete mechanics are more faithful to general non-geometric integrators, and consequently more accurate solutions of optimal control problems are obtained. We also find optimal trajectories efficiently as this is free of artificial numerical dissipations introduced by conventional numerical integration schemes.
+
+
+<div class="image" style="width:200px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/FR2.jpg" width="200px">
+<div style="text-align:center">Optimal combinatorial formation reconfiguration of multiple spacecraft</div>
+</div>
+<div class="image" style="padding-top:35px;  width:320px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/OptTRB_3dii.jpg" width="320px" style="padding-bottom:24px;">
+<div style="text-align:center">Optimal control of articulated rigid bodies: snapshots of a 180 degrees rotation, achieved by using an internal control torque on a joint</div>
+</div>
+<div class="image" style="padding-top:20px; width:165px; float:left;margin-bottom:10px">
+<img src="Fig/RBPF_NSF0710.jpg" width="165px" style="padding-bottom:7px;">
+<div style="text-align:center">Optimal control of connected rigid bodies in a perfect fluid: snapshots of forward swimming </div>
+</div>
+
+<div style="clear:both; text-align:center">Figure: Applications of geometric optimal control</div>
+
+
+<p class="subsection" style="clear:both"> Computational Geometric Mechanics </p>
+
+Geometric numerical integration deals with numerical integration methods that preserve geometric properties of a dynamic system, such as invariants, symmetries, reversibility, or the structure of the configuration manifold. The geometric structure of a dynamic system determines its qualitative dynamical behavior, however, general purpose numerical integrators fail to provide reasonable computational results. For example, numerical simulations based on the conventional implicit Euler method predict that the outer solar system collapses over a time period of several hundred years, but an integration over a hundred million years does not deteriorate with geometric integrators.
+
+<br><br>
+We developed geometric numerical integrators, referred to as <i>Lie group variational integrators</i> for mechanical systems evolving on a Lie group, with applications to complex multibody systems. They are developed from the perspective that a geometric numerical integrator for a Lagrangian or Hamiltonian system is a discrete-time Lagrangian or Hamiltonian mechanical system. Therefore, their numerical solutions are consistent with continuous time dynamic characteristics: they are symplectic and momentum preserving, and they exhibit good energy behavior over a long time period. They also preserve the Lie group structures as the update algorithm is based on the corresponding group operation. A recent benchmark studies show that they have substantial advantages in computational accuracy and efficiency: when compared to other geometric integrators, the speedup factor varies from 16 times to 98 times.
+
+<br><br>
+
+Due to these computation advantages, Lie group variational integrators have been applied to various multibody systems. Most importantly, it has been used to study the dynamics of the binary near-Earth asteroid 66391 (1999 KW4) at the Jet Propulsion Laboratory, NASA. Other examples include spacecraft formation flight, rigid bodies connected by ball joints, articulated rigid bodies in a perfect fluid, and tethered spacecraft with a reeling mechanism.
+
+<br><br>
+
+ 
+<div class="image" style="width:190px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/1999kw4small.jpg" width="190px" style="padding-top:20px; padding-bottom:17px">
+<div style="text-align:center">Near-Earth binary asteroid 66391, collaboration with JPL NASA</div>
+</div>
+
+<div class="image" style="width:170px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/3drod.jpg" width="170px">
+<div style="text-align:center">Bending dynamics of a slender rod</div>
+</div>
+
+<div class="image" style="width:200px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/StrPend_NSF0809.jpg" width="200px" style="padding-bottom:13px">
+<div style="text-align:center">Tethered spacecraft on a circular orbit</div>
+</div>
+
+<div class="image" style="width:140px; float:left; margin-bottom:10px">
+<img src="Fig/3dmd.jpg" width="140px"  style="padding-bottom:24px">
+<div style="text-align:center">Molecular dynamics</div>
+</div>
+
+<div style="clear:both; text-align:center">Figure: Applications of Lie group variational integrators</div>
+
+
+<p class="subsection"> Computational Geometric Uncertainty Propagation and Estimation </p>
+
+This is to develop computational geometric methods to propagate uncertainties through nonlinear Hamiltonian flows with stochastic excitations that evolve on nonlinear Lie group configuration spaces. The main objective is to derive computational methods that preserve the underlying stochastic and geometric properties of a Hamiltonian system to obtain long-term structural stability in the numerical uncertainty propagation. By incorporating mesh-free computational techniques that are globally valid on a Lie group, we obtained numerical algorithms that are well suited to propagating uncertainties along nontrivial trajectories of complex Hamiltonian systems over a long-time period. These represent significant advances over current computational methods that are restricted to moderate trajectories, simple dynamic properties, and short propagation times. 
+
+<br><br>
+
+We also developed attitude estimation algorithm directly on the special orthogonal group to avoid complexities, singularities, and ambiguities that appear in other attitude representation such as quaternions and Euler angles.
+
+<div class="image" style="width:800px; float:left; margin-right:20px; margin-bottom:10px; text-align:center">
+<img src="Fig/uprop.png" width="400px" style="padding-top:20px; padding-bottom:17px; ">
+<div style="text-align:center">(Advection): the initial uncertainty (left) is propagated along Hamiltonian flows to obtain the sample values of the probability density (center); the propagated uncertainty (right) is reconstructed by using noncommutative harmonic analysis. (Diffusion): Liouville's equation representing the diffusion effects are converted into an ordinary differential equation, which is integrated numerically. (Splitting) the advection approach and the diffusion approach is combined by a splitting technique.
+</div>
+</div>
+
+<div style="clear:both; text-align:center">Figure: computational uncertainty propagation algorithm</div>
+
+
+<div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
+<img src="Fig/NSF14_Diff_1_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+</div>
+<div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
+<img src="Fig/NSF14_Diff_5_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+</div>
+<div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
+<img src="Fig/NSF14_Diff_9_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+</div>
+<div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
+<img src="Fig/NSF14_Diff_13_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+</div>
+<div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
+<img src="Fig/NSF14_Diff_17_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+</div>
+<div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
+<img src="Fig/NSF14_Diff_20_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+</div>
+
+<div style="clear:both; text-align:center">Figure: visualization of the propagated attitude probability density on the unit-sphere</div>
+
+
+</article>
+</div><!-- main -->
+
+    <div id="navbar">
+        <nav>
+            800 22nd St NW, Washington DC 20052 &nbsp; &nbsp; &#8226; &nbsp; &nbsp; 202-994-6749 &nbsp; &nbsp; &#8226; &nbsp; &nbsp; <a href="mailto:tylee@gwu.edu">tylee@gwu.edu</a>
+        </nav>
+    </div>
+
+    
+</div> <!-- /wrap -->
+
+</body>
+</html>

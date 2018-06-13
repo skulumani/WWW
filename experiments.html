@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Flight Dynamics and Control Lab - Dr. Taeyoung Lee </title>                  
+<link rel="stylesheet" media="screen, projection" href="fdcl.css" />
+
+<script src="Ani/scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
+<script src="Ani/scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
+<link href="Ani/stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+
+</head> 
+
+<body>
+<div id="wrap">
+
+<div id="header">
+<img src="gw_port_new.png" width="220">         
+<div id="logo"> 
+<p align="right"> 
+<font style="font-size:38px; font-weight:100">Flight Dynamics and Control Lab </font> </p>
+<p align="right"><font style="font-stretch: condensed; color:rgb(105,171,218); font-size:19px">Mechanical and Aerospace Engineering 
+<p align="right">School of Engineering and Applied Science</font></p>
+</div> <!-- logo -->
+</div> <!-- Header -->
+
+<div id="navbar">	
+<nav>
+	<ul>
+	<li id="research"><a href="research.html">Research</a></li>
+	<li id="experiment" class="active"><a href="experiments.html">Experiments</a></li>
+	<li id="publication"><a href="publication_y.html">Publications</a></li>
+	<li id="faculty"><a href="faculty.html">Faculty</a></li>
+	<li id="student"><a href="students.html">Students</a></li>
+	<li id="position"><a href="position.html">*Open Position</a></li>
+	</ul>
+</nav>
+</div><!-- navbar -->
+
+<div id="main">	
+<article>
+
+<aside>
+
+<a href="https://www.facebook.com/fdcl.gwu/"><img src="fb.png" height="25"></a>
+<a href="https://www.youtube.com/channel/UCREzO49zrgcepGkLW4Qgn2Q"><img src="YouTube-logo-full_color.png" height="25"></a>
+<br>
+<a href="https://scholar.google.com/citations?user=sBBzntUAAAAJ&hl=en&oi=ao"><img src="google_scholar.png" height="25"></a>
+<a href="https://github.com/fdcl-gwu"><img src="git_hub.jpeg" height="25"></a>
+<br><br>
+
+</aside>
+
+
+<p class="section"> Experiments</p>
+
+
+<p class="subsection"> Facilities </p>
+
+<div class="image" style="width:300px; float:left; margin-right:20px; margin-left:0px; margin-bottom:0px">
+<img src="Fig/MoCa.jpg" width="300px" style="padding-top:5px; padding-bottom:0px">
+<div style="text-align:center">MOCA Lab with protective net</div>
+</div>
+
+Motion Capture (MOCA) laboratory is a 1200 square feet space located at the basement of the Elliott Building, and it is dedicated to research in high quality visual sensing. State-of-art 26 VICON cameras are situated around the room, which capture the position and orientation of unmanned aerial vehicles (UAVs). Markers are rigidly attached to each UAV in an asymmetric fashion. The cameras locate each of these markers at a very high speed so that the UAVs may use these measurements in real time experimentations. A removable net allows for safe flight testing.
+ 
+<br><br><br><br><br><br>
+
+
+<p class="subsection"> Autonomous Flight of Quadrotor UAV </p>
+
+Successful completion of sophisticated missions of cooperative UAV in dynamic environments often requires autonomous agile maneuvers. However, most of the existing controllers exhibit singularities when representing complex rotational maneuvers of a quadrotor UAV, thereby fundamentally restricting their ability to follow nontrivial trajectories. Furthermore, uncertainties and noises in environment may degrade the performance of UAV significantly, or even destabilize the whole system. The proposed geometric nonlinear control system is important as it provides almost global attractiveness to track complex commands in position and attitude. Almost global exponential attractiveness is guaranteed even if there exist unknown disturbances and noises.
+
+</p>
+
+<div class="image" style="width:180px; float:left; margin-right:60px; margin-left:20px; margin-bottom:10px;
+margin-top:20px">
+<img src="Fig/quad_CAD.jpg" width="220px" style="padding-left:-30px; padding-bottom:10px">
+<div style="clear:both; text-align:center">Figure: CAD Model</div>
+<img src="Fig/Quad.jpg" width="220px" style="padding-top:36px; padding-left:-30px">
+<div style="clear:both; text-align:center">Figure: Quadrotor Hardware</div>
+</div>
+
+
+<div style="margin-top:20px; margin-bottom:20px; margin-left:20px;"
+<object width="425" height="350">
+  <param name="movie" value="http://www.youtube.com/v/tPtyDAXh_lk" />
+  <param name="wmode" value="transparent" />
+  <embed src="https://www.youtube.com/v/wtn9L6BsYiE"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350"  style="padding-left:50px"/>
+<div style="clear:both; text-align:center; margin-left:230px">Video: Quadrotor backflip</div>
+</object>
+</div>
+
+A quadrotor is built for running various experiments by combining several parts such as a computer module (Gumstix), inertial measurement unit (IMU), motor controllers, and a circuit board.  We also developed a software package in C/C++ to receive measurement data from camera and IMU sensors and also implement a controller and estimator in real-time experiments. This software utilizes the TCP/IP programming for WIFI communication between the computer module installed on the quadrotor and our host computer. The proposed controller is tested in real-time experiments in the Motion Capture and Analysis (MOCA) laboratory that provide us with high-speed line-of-sight visual sensing. 
+
+</p>
+
+<div class="image" style="width:800px; margin-bottom:0px">
+<img src="Fig/Presentation1.png" width="800px" style="padding-top:10px; padding-bottom:10px">
+</div>
+
+</p>
+
+<p class="subsection"> Aerial Load Transportation </p>
+
+Safe, cooperative transportation of possibly large or bulky payloads is extremely important in various missions, such as military operations, search and rescue, Mars surface explorations, and personal assistants. The existing control systems for cable-suspended payload are based on the restrictive assumption that the dynamics of cable and payload are ignored, and they are considered as bounded disturbances to the transporting vehicles. Therefore they cannot be applied to aggressive, rapid load transportation where the cable is deformed or the tension along the cable is low, thereby restricting its applicability. As such it is impossible to guarantee safety operations.
+
+<br><br>
+
+In this research, the complete dynamics of multiple quadrotors transporting a cable-suspended payload are explicitly considered in control system design. Cables are modeled as an arbitrarily number of serially connected links such that large deformations are accurately modeled. The nonlinear dynamic coupling effects between cable, payload, and quadrotors are modeled by rigorous mathematical analysis.
+
+<br><br>
+
+Our proposed controller has been tested on a single quadrotor stabilizing a payload theoretically with numerical simulation as well as experimentally in the MOCA lab on the developed embedded system for a variety of trajectories. The proposed approaches that are based on the full dynamic model of multiple quadrotors with cable-suspended payload greatly improve maneuverability, agility, accuracy, and robustness of areal load transportation.
+
+<br>
+
+
+<div class="image" style="width:180px; float:left; margin-right:60px; margin-left:20px; margin-bottom:10px;
+margin-top:40px">
+<img src="Fig/quad_payload1.jpg" width="220px" style="padding-left:-30px">
+<div style="clear:both; text-align:center">Figure: Quadrotor with a payload connected by flexible cable</div>
+</div>
+
+
+<div style="margin-top:30px"
+<object width="425" height="350">
+  <param name="movie" value="http://www.youtube.com/v/RyTmWVbgt34" />
+  <param name="wmode" value="transparent" />
+  <embed src="http://www.youtube.com/v/RyTmWVbgt34"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" style="padding-left:50px"/>
+</object>
+</div>
+
+<br><br><br>
+
+<p class="subsection"> Free-Floating Hexrotor UAV </p>
+
+Experimental validation techniques for large angle rotational maneuvers of spacecraft, such as detumbling, experience difficulties. For example, spherical air bearings are restricted for tumbling motions. Most UAV testbeds, such as quadrotors, are limited to a single attitude plane of hover and are only capable of limited rotations over short periods of time. We propose a new UAV free of these restrictions that is capable of testing complex rotational maneuvers. Furthermore the control, which is known as geometric nonlinear control, takes into account the characteristics of the non-flat, curved spaces in the control system design using tools from differential geometry. This allows for control of large angle rotational maneuvers on a continuous space free of singularities and ambiguities.
+
+<br><br>
+
+We propose two novel concepts: a hexrotor (six propellers) UAV that is capable of hover at any attitude and a stable control system that can handle large angle rotations. The hexrotor propeller planes are fixed to the body such that two propellers exist on each of three planes and the propeller pitch angles are controllable so that quick reversal of thrust is possible, thereby allowing for three-dimensional force vectors and moment vectors at any attitude. The geometric controller is adapted for the fully-actuated UAV so that any attitude trajectory within the system operation limits is possible. The required force and moment is converted into propeller thrust commands in a relatively straightforward fashion. 
+
+<br><br>
+
+The controller is programmed onto a Linux-based computer-on-module (COM) using multi-thread C coding. The propeller system is chosen to be the combination of motors, propellers, and variable pitch mechanisms that yields the greatest possible thrust. This combination, which includes a 3D printed part to connect the actuator to the UAV frame, undergoes extensive testing on a test stand; a relationship between propeller speed and pitch is chosen such that the propeller system operates inside a high-efficiency region. A printed circuit board (PCB) serves to distribute power as well as provide the voltage level shifting between the COM, motors, servos (used for propeller pitch control), and sensors. The Vicon camera system in the Motion Capture (MoCa) laboratory (shown above) calculates the UAV position and attitude, which is sent over an XBee communication device. An onboard inertial measurement unit (IMU) provides the angular velocity. The geometric nonlinear controller, propeller system, and sensors have all been numerically validated. The hexrotor UAV has accomplished preliminary attitude controller results (see the video below).
+
+<br><br>
+
+<div class="image" style="width:180px; float:left; margin-right:60px; margin-left:20px; margin-bottom:10px;
+margin-top:10px">
+<img src="Fig/b_to_t.jpg" width="150px" style="padding-bottom:26px">
+<img src="Fig/UAV_OnTestStand.jpg" width="150px" style="padding-bottom:26px">
+<img src="Fig/Hexrotor_SphericalJoint.jpg" width="150px" style="padding-bottom:26px">
+</div>
+
+
+<div style="margin-top:50px"
+<object width="425" height="350">
+  <param name="movie" value="http://www.youtube.com/v/j0NJP18T1Es" />
+  <param name="wmode" value="transparent" />
+  <embed src="http://www.youtube.com/v/j0NJP18T1Es"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" style="padding-left:30px"/>
+</object>
+</div>
+
+
+
+<br><br><br>
+
+
+<p class="subsection"> Laser-Guided Autonomous Landing on an Inclined Surface </p>
+
+
+<div style="width: 380px; float:left; margin-right:10px; margin-bottom:10px">
+<iframe width="380px" height="280px" src="http://www.youtube.com/embed/uN0mkR3cIzY" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div style="width: 380px; float:left;">
+<iframe width="380px" height="280px" src="http://www.youtube.com/embed/Tx_WsYDYz7g" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div style="clear:both; text-align:center; margin-bottom:30px">Video: Explanation of Onboard Laser-Vision System (left); Experimental Validation of Autonomous Landing (right)</div>
+
+
+
+
+
+<p>Traditionally, quadrotors take off and land from uninclined flat ground; a quadrotor is an underactuated system, so hovering is only possible at an uninclined attitude. However, it may be desirable for a quadrotor to have the capability to land on an inclined surface autonomously. For example, landing a quadrotor on the deck of a ship in rough waters could be a challenging task since the landing surface's inclination oscillates with time. To carefully land a quadrotor on a flat inclined surface, knowledge of the surface's orientation with respect to the quadrotor is required. To this end, a new system is proposed which utilizes a single onboard camera along with inexpensive laser modules to estimate the distance to the ground plane along with the normal vector defining the ground plane. The camera and laser modules are fixed to the quadrotor frame, and the camera detects the projections of the laser modules on the ground surface using brightness detection, which is not very computationally expensive. With the coordinates of the laser dot centroids, geometrical considerations yield the altitude of the quadrotor and the ground plane orientation. This information can then be used to design a safe landing trajectory to align the quadrotor's attitude to the landing surface at touch down.
+
+<br><br>
+
+<div class="image" style="width:800px; margin-bottom:10px">
+<img src="Fig/Image_Processing.png" width="800px" style="padding-top:10px; padding-bottom:10px">
+</div>
+
+<div style="clear:both; text-align:center">Figure: Image processing and estimation scheme</div>
+
+<br><br>
+ 
+<div class="image" style="width:190px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/Hyperion3.jpg" width="190px" style="padding-top:20px; padding-bottom:20px">
+<div style="text-align:center">Custom quadrotor fitted with laser-and-camera system</div>
+</div>
+
+<div class="image" style="width:170px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/lasers.jpg" width="170px" style="padding-bottom:26px">
+<div style="text-align:center">View of underside of quadrotor exposing laser modules and camera</div>
+</div>
+
+<div class="image" style="width:170px; float:left; margin-right:20px; margin-bottom:10px">
+<img src="Fig/pgr_camera.jpg" width="170px" style="padding-bottom:17px">
+<div style="text-align:center">Close-up view of camera fixed to underside of quadrotor</div>
+</div>
+
+<div class="image" style="width:170px; float:left; margin-bottom:10px">
+<img src="Fig/landing_platform.jpg" width="170px"  style="padding-top:20px; padding-bottom:40px">
+<div style="text-align:center">Custom-built landing platform with adjustable inclination</div>
+</div>
+
+<div style="clear:both; text-align:center">Figure: Hardware used in quadrotor vision experiments</div>
+
+<br><br>
+
+The proposed system is developed for a custom-built quadrotor. The quadrotor is assembled from a commercially-available frame made of carbon fiber and fitted with 3D printed plastic parts to accommodate the unique features. A Gumstix Overo Computer-on-Module (COM) runs embedded Linux and handles control, communication, and image processing. Four brushless DC motors serve as actuators and are controlled by commercial  electronic speed controllers (ESC's); motor commands are sent via I2C. Controller and image processing code is written in C with the OpenCV library along with libdc1394. A CMOS camera is mounted to the underside of the quadrotor along with eight laser modules. Data from an onboard inertial measurement unit (IMU) is fused with data from Vicon Motion Capture cameras to precisely obtain the quadrotor's position, velocity, attitude, and angular velocity during flight.
+
+<div class="image" style="width:800px; float:left; margin-right:20px; margin-bottom:10px; text-align:center">
+<img src="Fig/Quadrotor_Laser_Model_3D.png" width="300px" style="padding-top:20px; padding-bottom:17px; padding-right:20px ">
+<img src="Fig/hover_ramp_side.jpg" width="300px" style="padding-top:20px; padding-bottom:17px; ">
+</div>
+
+<div style="clear:both; text-align:center">Figure: [Left] 3D quadrotor and laser geometry model; [Right] Quadrotor hovering over landing surface with lasers activated</div>
+
+<br><br>
+
+
+
+
+</article>
+</div><!-- main -->
+
+    <div id="navbar">
+        <nav>
+            800 22nd St NW, Washington DC 20052 &nbsp; &nbsp; &#8226; &nbsp; &nbsp; 202-994-6749 &nbsp; &nbsp; &#8226; &nbsp; &nbsp; <a href="mailto:tylee@gwu.edu">tylee@gwu.edu</a>
+        </nav>
+    </div>
+
+    
+</div> <!-- /wrap -->
+
+</body>
+</html>

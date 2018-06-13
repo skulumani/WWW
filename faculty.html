@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title> Flight Dynamics and Control Lab - Dr. Taeyoung Lee </title>
+        <link rel="stylesheet" media="screen, projection" href="fdcl.css" />
+        
+        <script src="Ani/scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
+        <script src="Ani/scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
+        <link href="Ani/stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+        
+    </head>
+    
+    <body>
+        <div id="wrap">
+            
+            <div id="header">
+                <img src="gw_port_new.png" width="220">
+                    <div id="logo">
+                        <p align="right">
+                        <font style="font-size:38px; font-weight:100">Flight Dynamics and Control Lab </font> </p>
+                        <p align="right"><font style="font-stretch: condensed; color:rgb(105,171,218); font-size:19px">Mechanical and Aerospace Engineering
+                            <p align="right">School of Engineering and Applied Science</font></p>
+                    </div> <!-- logo -->
+            </div> <!-- Header -->
+            
+            <div id="navbar">
+                <nav>
+                    <ul>
+			<li id="research"><a href="research.html">Research</a></li>
+			<li id="experiments"><a href="experiments.html">Experiments</a></li>
+			<li id="publication"><a href="publication_y.html">Publications</a></li>
+			<li id="faculty" class="active"><a href="faculty.html">Faculty</a></li>
+			<li id="student"><a href="students.html">Students</a></li>
+			<li id="position"><a href="position.html">*Open Position</a></li>
+                    </ul>
+                </nav>
+            </div><!-- navbar -->
+
+
+
+<div id="main">	
+
+<article>
+<aside>
+<a href="https://www.facebook.com/fdcl.gwu/"><img src="fb.png" height="25"></a>
+<a href="https://www.youtube.com/channel/UCREzO49zrgcepGkLW4Qgn2Q"><img src="YouTube-logo-full_color.png" height="25"></a>
+<br>
+<a href="https://scholar.google.com/citations?user=sBBzntUAAAAJ&hl=en&oi=ao"><img src="google_scholar.png" height="25"></a>
+<a href="https://github.com/fdcl-gwu"><img src="git_hub.jpeg" height="25"></a>
+
+<br><br><br>
+	
+<a href="tylee.pdf">Click for CV</a>
+<br><br>
+<a href="TS.pdf">Click for Teaching Statement</a>
+
+</aside>
+
+<p class="section">DR. Taeyoung Lee</p>
+
+<p class="subsection">Education</p>
+<ul>
+<table>
+  <tr>
+    <td width="100" valign="top">Ph. D.</td>
+    <td width="350" >Department of Aerospace Engineering</td>
+    <td width="200" valign="top">University of Michigan</td>
+    <td width="120" align="right" valign="top">Sep 2004-Aug 2008</td>
+  </tr>
+  <tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><em>Thesis</em>: <a href="tylee_phd08.pdf"><b>Computational Geometric Mechanics and Control of Rigid Bodies</b></a>
+    <a href="http://www.lulu.com/content/2568805">[Order a bound copy]</a></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><em>Advisor</em>: 
+    <a href="http://www.engin.umich.edu/college/about/people/profiles/k-to-o/harris-mcclamroch/view">N. Harris McClamroch</a>, 
+    <a href="http://www.math.ucsd.edu/~mleok">Melvin Leok</a></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><em>Committee</em>:  
+<a href="http://ccar.colorado.edu/scheeres/Scheeres/Home.html">Daniel Scheeres</a>,
+<a href="http://www.math.lsa.umich.edu/~abloch/">Anthony Bloch</a>,
+<a href="http://www.eecs.umich.edu/~grizzle/">Jessy Grizzle</a></td>
+  </tr>
+
+  <tr height="10"><td> </td></tr>
+
+  <tr>
+    <td >M.S.</td>
+    <td>Department of Mathematics</td>
+    <td>University of Michigan</td>
+    <td align="right">Sep 2007-Apr 2008</td>
+  </tr>
+
+  <tr height="10"><td> </td></tr>
+
+  <tr>
+    <td >M.S.</td>
+    <td>Department of Aerospace Engineering</td>
+    <td>Seoul National University</td>
+    <td align="right">1998-2000</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><em>Thesis</em>: <a href="thesis/98416525.pdf">Nonlinear Adaptive and Robust Flight Control Using the Backstepping Algorithm</a> (in Korean)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><em>Committee</em>: <a href="http://fdcl.snu.ac.kr/people/ydkim/">Youdan Kim</a> (<em>Advisor</em>), Younghyup Kim, Changdon Kee</td>
+    </tr>
+    <tr height="10"><td> </td></tr>
+  <tr>
+    <td>B.S.</td>
+    <td>Department of Aerospace Engineering</td>
+    <td>Seoul National University</td>
+    <td align="right">1994-1998</td>
+  </tr>
+    <tr>
+    <td></td>
+    <td colspan="3"><em>Thesis</em>: <a href="thesis/94416044.pdf">F-16 Nonlinear Simulator Development using OpenGL</a> (in Korean)</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><em>Committee</em>: <a href="http://fdcl.snu.ac.kr/people/ydkim/">Youdan Kim</a> (<em>Advisor</em>)</td>
+    </tr>
+</table>
+</ul>
+
+
+<p class="subsection">Professional Experience</p>
+<ul>
+<table>
+  <tr>
+    <td width="150" valign="top">Associate Professor</td>
+    <td width="500" valign="top">Department of Mechanical and Aerospace Engineering<br>
+    The George Washington University</td>
+    <td width="120" align="right" valign="top">Aug 2015-present</td>   
+  </tr>
+
+    <tr height="10"><td> </td></tr>
+  <tr>
+    <td width="150" valign="top">Assistant Professor</td>
+    <td width="500" valign="top">Department of Mechanical and Aerospace Engineering<br>
+    The George Washington University</td>
+    <td width="120" align="right" valign="top">Aug 2011-Jul 2015</td>   
+  </tr>
+
+    <tr height="10"><td> </td></tr>
+
+  <tr>
+    <td width="150" valign="top">Assistant Professor</td>
+    <td width="500" valign="top">Department of Mechanical and Aerospace Engineering<br>
+    Florida Institute of Technology</td>
+    <td width="120" align="right" valign="top">Aug 2008-Aug 2011</td>   
+  </tr>
+
+    <tr height="10"><td> </td></tr>
+
+<!--  <tr>
+    <td width="150" valign="top">Visiting Scholar</td>
+    <td width="500">Department of Aerospace Engineering<br>
+    University of Michigan</td>
+    <td width="120" align="right" valign="top">May 2009-Jun 2009</td>
+  </tr>
+
+    <tr height="10"><td> </td></tr>
+    
+  <tr>
+    <td width="150" valign="top">Postdoctoral Scholar</td>
+    <td width="500">Department of Aerospace Engineering<br>
+    University of Michigan</td>
+    <td width="120" align="right" valign="top">May 2008-Jul 2008</td>
+  </tr>
+
+    <tr height="10"><td> </td></tr>
+-->
+    
+  <tr>
+    <td width="150" valign="top">Military Service</td>
+    <td width="500" >Second lieutenant, Tactical Control Officer<br>The 3rd Air Defense Artillery Division, Republic of Korea Air Force<br><br></td>
+    <td width="120" align="right" valign="top">2001-2004</td>
+  </tr>
+</table>
+</ul>
+
+
+
+<p class="subsection">Research Grants</p>
+<ul>
+<table>
+  <tr>
+    <td width="640">Office of Naval Research Grant #N00014-15-1-2043 (co-PI)</td>
+    <td width="130" align="right">2015-2018</td>
+  </tr>
+  <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Analysis of Ship Air Wakes</i></td>
+  </tr>
+
+  <tr>
+    <td width="640">Naval Research Laboratory Contract #N00173-14-F-0584 (PI)</td>
+    <td width="130" align="right">2015-2017</td>
+  </tr>
+  <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Collaborative Autonomous Aerial Exploration</i></td>
+  </tr>
+
+  <tr>
+    <td width="640">NSF CMMI Control Systems <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1335008">#1335008</a> (PI)</td>
+    <td width="130" align="right">2013-2017</td>
+  </tr>
+  <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Stochastic Motion Planning and Estimation with Non-Gaussian Uncertainty Distributions on a Lie Group</i></td>
+  </tr>
+
+  <tr>
+    <td width="640">NSF CNS Major Research Instrumentation <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1337722">#1337722</a> (co-PI)</td>
+    <td width="130" align="right">2013-2017</td>
+  </tr>
+  <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Development of Large-Scale Dense Scene Capture and Tracking Instrument</i></td>
+  </tr>
+
+  <tr>
+    <td width="640">NSF CMMI Dynamic Systems <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1029551">#1029551</a> (PI)</td>
+    <td width="130" align="right">2010-2014</td>
+  </tr>
+  <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Computational Geometric Uncertainty Propagation for Hamiltonian Systems on a Lie Group</i> </td>
+  </tr>
+
+    <tr>
+        <td width="640">GWU Institute for Biomedical Engineering Interdisciplinary Research Grant (PI)</td>
+        <td width="130" align="right">2011-2012</td>
+    </tr>
+    <tr>
+        <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Optimal Control of Anti-Tachycardia Pacing Therapy</i></td>
+    </tr>
+
+    <tr>
+    <td width="640">Faculty Professional Development Grant, Florida Institute of Technology (PI)</td>
+    <td width="130" align="right">2010</td>
+  </tr>
+  <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Development of an Autonomous Quadrotor UAV for Educational Research</i></td>
+  </tr>
+
+
+
+</table>
+</ul>
+
+
+<p class="subsection">Honors & Awards</p>
+<ul>
+<table>
+    <tr>
+    <td width="640"><i>Air Force Summer Faculty Fellowship</i>, Air Force Office of Scientific Research, Kirtland AFB, Albuquerque NM</td>
+    <td width="130" align="right">2013</td>
+    </tr>
+    <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em> Vision-Based Spacecraft Formation Control and Estimation Network </em></td>
+    </tr>
+
+    <tr>
+    <td width="640"><i>Air Force Summer Faculty Fellowship</i>, Air Force Office of Scientific Research, Kirtland AFB, Albuquerque NM</td>
+    <td width="130" align="right">2012</td>
+    </tr>
+    <tr>
+    <td width="640">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em> Vision-Based Spacecraft Relative Attitude Control and Estimation </em></td>
+    </tr>
+
+  <tr>
+    <td width="640"><i>Best Student Course Evaluation</i>, Mechanical and Aerospace Engineering, Florida Institute of Technology</td>
+    <td width="130" align="right">2010</td>
+  </tr>
+
+  <tr>
+    <td width="640"><i>Distinguished Dissertation Award, honorable mention</i>, College of Engineering, University of Michigan</td>
+    <td width="130" align="right">2009</td>
+  </tr>
+
+  <tr>
+    <td width="640"><i>Distinguished Achievement Award</i>, University of Michigan</td>
+    <td width="130" align="right">2008</td>
+  </tr>
+
+  <tr>
+    <td width="640"><i>Ivor K. McIvor Award</i>, College of Engineering, University of Michigan</td>
+    <td width="130" align="right">2008</td>
+  </tr>
+
+  <tr>
+    <td width="640"><i>SIAM Conference on Computational Science & Engineering, BGCE Student Paper Prize, finalist</i></td>
+    <td width="130" align="right">2007</td>
+  </tr>
+
+  <tr>
+    <td width="640"><i>Rackham Predoctoral Fellowship</i>, Horace H. Rackham School of Graduate Studies, University of Michigan</td>
+    <td width="130" align="right">2006-2007</td>
+  </tr>
+
+  <tr>
+    <td ><i>Rackham International Students Fellowship</i>, Horace H. Rackham School of Graduate Studies, University of Michigan</td>
+    <td width="130" align="right">2006</td>
+  </tr>
+
+  <tr>
+    <td ><i>Rackham Travel Grant</i>, Horace H. Rackham School of Graduate Studies, University of Michigan</td>
+    <td width="130" align="right"> Feb. 2006, Aug. 2006</td>
+  </tr>
+
+  <tr>
+    <td ><i>International Scholarship</i>, Ministry of Education & Human Resources Development, Korea</td>
+    <td width="130" align="right">2004</td>
+  </tr>
+</table>
+</ul>
+
+
+
+<p class="subsection">Invited Talks</p>
+<ul>
+<table>
+    <tr>
+    <td width="700"><a href="">Geometric Mechanics and Control on Nonlinear Manifolds for Complex Aerospace Systems</a>
+    <br><i>Department of Aerospace Engineering</i>,  University of Michigan, Ann Arbor MI
+    <td  width="110" align="right" valign="top">Mar 2016</td>
+    </tr>
+
+    <tr>
+    <td width="700"><a href="">Geometric Mechanics and Control on Nonlinear Manifolds for Complex Aerospace Systems</a>
+    <br><i>MAE Seminar Series</i>,  Syracuse University, Syracuse NY
+    <td  width="110" align="right" valign="top">Mar 2016</td>
+    </tr>
+
+
+    <tr>
+    <td width="700"><a href="">Geometric Mechanics and Control on Nonlinear Manifolds for Complex Aerospace Systems</a>
+    <br><i>MAE Seminar Series</i>,  Seoul National University, South Korea
+    <td  width="110" align="right" valign="top">Sep 2014</td>
+    </tr>
+
+
+    <tr>
+    <td width="700"><a href="">Global Formulations of Stochastic Analysis on Manifolds</a>
+    <br><i>NSF Workshop on Learning, Perception and Control in Robots and Humans</i>,  Arlington VA
+    <td  width="110" align="right" valign="top">Aug 2015</td>
+    </tr>
+
+    <tr>
+    <td width="700"><a href="">Geometric Mechanics and Control on Nonlinear Manifolds for Complex Aerospace Systems</a>
+    <br><i>MAE Seminar Series</i>,  Seoul National University, South Korea
+    <td  width="110" align="right" valign="top">Sep 2014</td>
+    </tr>
+
+    <tr>
+    <td width="700"><a href="">Geometric Mechanics and Control on Nonlinear Manifolds for Complex Aerospace Systems</a>
+    <br><i>Department Seminar Series</i>,  Yonsei University, South Korea
+    <td  width="110" align="right" valign="top">Sep 2014</td>
+    </tr>
+
+
+    <tr>
+    <td width="700"><a href="">Stochastic Optimal Motion Planning and Estimation for the Attitude Kinematics on SO(3)</a>
+    <br><i>AMS Eastern Sectional Meeting, Special Session on Mechanics and Control</i>,  UMBC, Baltimore MD
+    <td  width="110" align="right" valign="top">Mar 2014</td>
+    </tr>
+
+    <tr>
+    <td width="700"><a href="">Geometric Mechanics and Control on Nonlinear Manifolds for Complex Aerospace Systems</a>
+    <br><i>AFRL Seminar Series</i>,  Kirtland AFB, Albuquerque NM</td>
+    <td  width="110" align="right" valign="top">Jul 2013</td>
+    </tr>
+
+    <tr>
+    <td width="700"><a href="">Computational Geometric Mechanics and Controls for Complex Aerospace Systems</a>
+    <br><i>ECE Seminar Series</i>,  University of Virginia</td>
+    <td  width="110" align="right" valign="top">Mar 2013</td>
+    </tr>
+
+    <tr>
+    <td width="700"><a href="">Computational Geometric Mechanics and Control on Nonlinear Manifolds</a>
+    <br><i>Mathematics Colloquium Series</i>,  University of Maryland Baltimore County</td>
+    <td  width="110" align="right" valign="top">Nov 2011</td>
+    </tr>
+
+  <tr>
+    <td width="700"><a href="">Geometric Control on Nonlinear Manifolds
+for Complex Aerospace Systems</a>
+    <br><i>Physical Sciences Department Colloquium Series</i>,  Embry-Riddle Aeronautical University</td>
+    <td  width="110" align="right" valign="top">Apr 2011</td>
+  </tr>
+  
+<!--  <tr>
+    <td width="700"><a href="">Geometric Control on Nonlinear Manifolds
+for Complex Aerospace Systems</a>
+    <br><i>The George Washington University</td>
+    <td  width="110" align="right" valign="top">Mar 2011</td>
+  </tr> -->
+
+
+  <tr>
+    <td width="700"><a href="">Discrete Geometric Mechanics</a>
+    <br><i>Young Researchers Workshop on Geometry, Mechanics and Control</i>,  University of La Laguna, Spain</td>
+    <td  width="110" align="right" valign="top">Dec 2010</td>
+  </tr>
+
+
+  <tr>
+    <td width="700"><a href="seminar/SI10.pdf">Lie Group Variational Integrator for Dynamics and Control of Multibody Systems</a>
+    <br><i>Structured Integrators Workshop</i>,  University of California, San Diego</td>
+    <td  width="110" align="right" valign="top">Apr 2010</td>
+  </tr>
+
+
+  <tr>
+    <td width="700"><a href="seminar/FIT08.pdf">Computational Geometric Mechanics and Control of Rigid Bodies</a>
+    <br><i>Florida Institute of Technology</i>,  Melbourne, Florida</td>
+    <td  width="110" align="right" valign="top">Feb 2008</td>
+  </tr>
+
+  <tr>
+    <td width="700"><a href="seminar/CSE07.pdf">Computational Geometric Mechanics, Control, and Estimation of Rigid Bodies on Lie Groups</a>
+    <br><i>SIAM Conference on Computational Science and Engineering</i>,  Costa Mesa, California</td>
+    <td  width="110" align="right" valign="top">Feb 2007</td>
+  </tr>
+
+  <tr>
+    <td width="700"><a href="seminar/fdcl06fall.pdf">Optimal Control of a Rigid Body using Geometrically Exact Computations on Lie Groups</a>
+    <br><i>Flight Dynamics and Control Student Seminar</i>, University of Michigan</td>
+    <td  width="110" align="right" valign="top">Oct 2006</td>
+  </tr>
+
+  <tr>
+    <td width="700"><a href="seminar/fdcl05fall.pdf">Attitude Maneuvers of a Rigid Spacecraft in a Circular Orbit</a>
+    <br><i>Flight Dynamics and Control Student Seminar</i>, University of Michigan</td>
+    <td  width="110" align="right" valign="top">Nov 2005</td>
+  </tr>
+
+  <tr>
+    <td><a href="seminar/fdcl05winter.pdf">Lie Group Variational Integrator for the Attitude dynamics of a Rigid body</a>
+    <br><i>Flight Dynamics and Control Student Seminar</i>, University of Michigan</td>
+    <td width="110" align="right" valign="top">Feb 2005</td>
+  </tr>
+</table>
+</ul>
+
+
+<p class="subsection">Editorial Services</p>
+<ul>
+<table>
+
+    <tr>
+    <td width="700"><i> Committee Member: </i> Technical Program Committee</a>
+    <br>2016 American Control Conference </td>
+    <td  width="110" align="right" valign="top">Oct 2014-Jul 2016</td>
+    </tr>
+
+    <tr>
+    <td width="700"><i> Committee Member: </i> Program Committee</a>
+    <br>2015 IMA Conference on Mathematics on Robotics </td>
+    <td  width="120" align="right" valign="top">Oct 2014-Sep 2015</td>
+    </tr>
+
+    <tr>
+    <td width="700"><i> Associate Editor: </i> Conference Editorial Board, IEEE Robotics and Automation Society</a>
+    <br>2015, 2016, 2017 IEEE Conference on Robotics and Automation</td>
+    <td  width="110" align="right" valign="top">Dec 2014-present</td>
+    </tr>
+
+    <tr>
+    <td width="700"><i> Associate Editor: </i> Conference Editorial Board, IEEE Control System Society</a>
+    <br>2014, 2015, 2016, 2017 American Control Conference
+    <br>2014, 2015, 2016, IEEE Conference on Decision and Control</td>
+    <td  width="110" align="right" valign="top">Jun 2013-present</td>
+    </tr>
+
+    <tr>
+    <td width="700"><i> Associate Editor: </i> Journal on Automation and Control Engineering</a><</td>
+    <td  width="110" align="right" valign="top">Jun 2013-</td>
+    </tr>
+
+</table>
+</ul>
+
+<p class="subsection">Conference Organization and Service </p>
+<ul>
+<table>
+
+    <tr>
+    <td width="700"><i> Committee Member: </i> Local Arrangement Committee, Conference Organization Board</a>
+    <br>Regular Session at American Control Conference </td>
+    <td  width="110" align="right" valign="top">Jun 2013</td>
+    </tr>
+
+  <tr>
+    <td width="700"><i> Organizer, Chair: </i>Geometric Control on Nonlinear Manifolds</a>
+    <br>Invited Session at IEEE Conference on Decision and Control</td>
+    <td  width="110" align="right" valign="top">Dec 2010</td>
+  </tr>
+
+  <tr>
+    <td width="700"><i> Organizer, Chair: </i>Synergies and Interplay of Nonlinear Dynamics and Control</a>
+    <br> Symposium honor of Dr. Harris McClamroch, University of Michigan
+    <br> "Harris Fest [Conference Report]," IEEE Control System Magazine, vol. 30, no. 5, pp. 81-83, 2010. <a href="http://dx.doi.org/10.1109/MCS.2010.937816">doi:10.1109/MCS.2010.937816</a></td>
+    <td  width="110" align="right" valign="top">May 2010</td>
+  </tr>
+
+
+<!--
+    <tr>
+    <td width="700"><i> Chair: </i> Quadrotor Controls</a>
+    <br>Regular Session at IEEE Conference on Decision and Control </td>
+    <td  width="110" align="right" valign="top">Dec 2015</td>
+    </tr>
+
+
+    <tr>
+    <td width="700"><i> Co-Chair: </i> Algebraic/Geometric Methods</a>
+    <br>Regular Session at American Control Conference </td>
+    <td  width="110" align="right" valign="top">Jun 2013</td>
+    </tr>
+
+    <tr>
+    <td width="700"><i> Co-Chair: </i> Spacecraft Control</a>
+    <br>Regular Session at American Control Conference </td>
+    <td  width="110" align="right" valign="top">Jun 2012</td>
+    </tr>
+
+  <tr>
+    <td width="700"><i> Co-Chair: </i> Robust Adaptive Control</a>
+    <br>Regular Session at IEEE Conference on Decision and Control </td>
+    <td  width="110" align="right" valign="top">Dec 2011</td>
+  </tr>
+
+
+  <tr>
+    <td width="700"><i> Chair: </i> Computational Methods</a>
+    <br>Regular Session at American Control Conference</td>
+    <td  width="110" align="right" valign="top">June 2010</td>
+  </tr>
+
+-->
+
+</table>
+</ul>
+
+
+
+<p class="subsection">Professional Service & Review</p>
+<ul>
+<table>
+
+	<tr>
+	<td width="620"><i>Review Panelist</i>: National Science Foundation (NSF), National Robotics Initiative (NRI)</td>
+	<td  width="150" align="right" valign="top">2013</td>
+	</tr>
+
+<tr>  
+    <td width="770"><i>Reviewer</i>: National Science Foundation (NSF); 
+IEEE Transactions on Automatic Control; 
+IEEE Transactions on Control Systems Technology; 
+IEEE Transactions on Neural Networks; 
+IEEE Transaction on Plasma Science; 
+IEEE Transactions on Industrial Electronics; 
+IEEE Robotics and Automation Magazine; 
+SIAM Journal on Control and Optimization; 
+ASME Journal of Dynamics, Measurements, and Control; 
+AIAA Journal of Guidance, Control, and Dynamics; 
+International Journal of Aerospace Engineering; 
+International Journal of Adaptive Control and Signal Processing; 
+International Journal of Advanced Robotic Systems; 
+International Journal of Control; 
+International Journal of Control, Automation and Systems; 
+International Journal of Robust and Nonlinear Control; 
+Asian Journal of Control; 
+Acta Astronautica; 
+Aerospace Science & Technology; 
+Automatica; 
+Celestial Mechanics and Dynamical Astronomy; 
+The Astronomical Journal; 
+Control Engineering Practice; 
+Computer Physics Communications; 
+Chinese Journal of Aeronautics; 
+The Astronomical Journal; 
+Journal of Aerospace Engineering;
+Journal of Nonlinear Science; 
+Transactions of the Japan Society for Aeronautical and Space Sciences, Aerospace Technology;
+Robotica; 
+Symmetry, Integrability and Geometry: Methods and Applications; 
+Systems and Control Letters; 
+IEEE Conference on Decision and Control; 
+IEEE Multi-conference on Systems and Control; 
+IEEE International Conference on Robotics and Automation; 
+IEEE International Conference on Intelligent Robots and Systems;
+AIAA Guidance, Navigation and Control Conference; 
+American Control Conference; 
+Applied Mathematical Modelling; 
+European Control Conference; 
+International Conference on Unmanned Aircraft Systems; 
+IMA Conference on Mathematics of Robotics\\
+ </td>
+  </tr>
+
+  <tr>
+    <td width="770"><i>Assessment Coordinator</i>: University coordinator for Southern Association of Colleges and Schools (SACS) accreditation
+  </tr>
+
+    <tr>
+    <td width="770"><i>Judge</i>: SEAS Research and Development Showcase </td>
+	<td  width="150" align="right" valign="top">2013, 2014 </td>
+    </tr>
+
+    <tr>
+    <td width="770"><i>Judge</i>: SSPI Mid-Atlantic Regional Chapter Scholarship Competition </td>
+	<td  width="150" align="right" valign="top">Apr 2012</td>
+    </tr>
+    </tr>
+
+</table>
+</ul>
+
+
+<p class="subsection">University Service</p>
+<ul>
+<table>
+
+    <tr>
+    <td width="770"><i>Committee Member</i>: Research Committee, Faculty Senate, GWU </td>
+	<td  width="150" align="right" valign="top">2013-2014</td>
+    </tr>
+
+    <tr>
+    <td width="770"><i>Committee Member</i>: Graduate Curriculum Committee, Mechanical and Aerospace Engineering, GWU </td>
+	<td  width="150" align="right" valign="top">2013-present</td>
+    </tr>
+
+    <tr>
+    <td width="770"><i>Faculty Secretary</i>: Mechanical and Aerospace Engineering, GWU </td>
+	<td  width="150" align="right" valign="top">2012-2013</td>
+    </tr>
+
+</table>
+</ul>
+
+<p class="subsection">Award by Supervised Students</p>
+<ul>
+<table>
+
+    <tr>
+    <td width="650" valign="top"> <em>Student Travel Award</em>: (Evan Kaufman, Shankar Kulumani), American Control Conference</td>
+	<td width="120" align="right" valign="top"> 2016 </td>
+	</tr>
+
+
+    <tr>
+    <td width="650" valign="top"> <em>1st Place - Experimental Research</em>: (Shankar Kulumani, Christopher Poole), Geometric adaptive control of attitude dynamics on SO(3)
+    <br> SEAS R&D Showcase, George Washington University</td>
+	<td width="120" align="right" valign="top"> 2016 </td>
+	</tr>
+
+
+
+
+    <tr>
+    <td width="650" valign="top"> <em>Heatherington Family Scholarship</em>: (Shankar Kulumani)</td>
+	<td width="120" align="right" valign="top"> 2016 </td>
+	</tr>
+
+
+
+    <tr>
+    <td width="650" valign="top"> <em>Most Innovative/Creative Project Award</em>: (Shankar Kulumani), Systematic design of optimal low-thrust orbital transfers in the three-body problem
+    <br> The 5th Annual Student Competition, Society for Satellite Professional Internationals (SSPI)</td>
+	<td width="120" align="right" valign="top"> 2015 </td>
+	</tr>
+
+
+    <tr>
+    <td width="650" valign="top"> <em>Second Prize</em>: (John Dougherty), Laser-based onboard sensing and estimation for precise landing of a quadrotor UAV on an inclined surface
+    <br> AIAA Region I Student Conference</td>
+	<td width="120" align="right" valign="top"> 2014 </td>
+	</tr>
+
+    <tr>
+    <td width="650" valign="top"> <em>Second Prize</em>: (Tse-Huai Wu), Vision-based spacecraft attitude formation control
+    <br> GWU Research Day</td>
+	<td width="120" align="right" valign="top"> 2014 </td>
+	</tr>
+
+    <tr>
+    <td width="650" valign="top"> <em>Student Travel Award</em>: (Farhad Goodarzi), American Control Conference</td>
+	<td width="120" align="right" valign="top"> 2014 </td>
+	</tr>
+
+    <tr>
+    <td width="650" valign="top"> <em>Student Travel Award</em>: (John Dougherty), American Control Conference</td>
+	<td width="120" align="right" valign="top"> 2014 </td>
+	</tr>
+
+    <tr>
+    <td width="650" valign="top"> <em>Third Place Prize</em>: (Tse-Huai Wu), Vision-Based Spacecraft Formation Control and Estimation Network 
+    <br>The 3rd Annual Student Competition, Society for Satellite Professional Internationals (SSPI) </td>
+	<td width="120" align="right" valign="top"> 2013 </td>
+	</tr>
+
+	<tr>
+	<td width="650"> <em>SUPER Fellowship</em>: (Kiren Caldwell), Spacecraft Formation Control Testbed
+with Free-Floating Aerial Vehicles
+	<br> Summer Undergraduate Program in Engineering Research, The George Washington University </td>
+	<td width="120" align="right" valign="top"> 2013 </td>
+	</tr>
+</table>
+
+
+
+<p class="subsection">Mentoring Experience</p>
+<ul>
+<table>
+
+    <tr>
+    <td width="150" valign="top"> Postdoctoral Scientist </td>
+	<td width="500"> Dr. Kuya Takami: Autonomous aerial exploration</td>
+	<td width="150" align="right" valign="top"> 2016-present</td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top">  </td>
+	<td width="500"> Dr. Daewon Lee: Adaptive control of autonomous load transportation</td>
+	<td width="150" align="right" valign="top"> 2012-2014</td>
+	</tr>
+
+
+    <tr> 
+    <td width="150" valign="top"> Graduate Students </td>
+	<td width="500"> Evan Kaufman (Ph.D): Autonomous aerial exploration </td>
+	<td width="150" align="right" valign="top"> 2012-present </td>
+	</tr>
+
+    <tr> 
+    <td width="150" valign="top"> </td>
+	<td width="500"> Shankar Kulumani (Ph.D): Low-thrust optimal orbital transfer </td>
+	<td width="150" align="right" valign="top"> 2014-present </td>
+	</tr>
+
+    <tr> 
+    <td width="150" valign="top"> </td>
+	<td width="500"> Mahdis Bisheban (Ph.D): Geometric control of quadrotor UAV under winds </td>
+	<td width="150" align="right" valign="top"> 2015-present </td>
+	</tr>
+
+    <tr> 
+    <td width="150" valign="top"> </td>
+	<td width="500"> Kalpesh Patil (MS): Telemetry system for ship air wakes </td>
+	<td width="150" align="right" valign="top"> 2015-present </td>
+	</tr>
+
+    <tr> 
+    <td width="150" valign="top"> </td>
+	<td width="500"> Kanishke Gamagedar (MS): Telemetry system for ship air wakes </td>
+	<td width="150" align="right" valign="top"> 2016-present </td>
+	</tr>
+
+
+    <tr>
+    <td width="150" valign="top"> Former Students </td>
+	<td width="500"> Farhad Goodarzi (Ph.D): Geometric control of quadrotor UAV </td>
+	<td width="150" align="right" valign="top"> 2011-2015 </td>
+	</tr>
+
+    <tr> 
+    <td width="150" valign="top"> </td>
+	<td width="500"> Tse-Huai Wu (Ph.D): Vision-based spacecraft formation control </td>
+	<td width="150" align="right" valign="top"> 2013-2015 </td>
+	</tr>
+
+
+    <tr>
+    <td width="150" valign="top">  </td> 
+	<td width="500"> Kiren Caldwell (MS): Autonomous flight of quadrotor via DGPS </td>
+	<td width="150" align="right" valign="top">  2014-2015 </td>
+	</tr>
+
+    <tr> 
+    <td width="150" valign="top">  </td>
+	<td width="500"> John A. Dougherty (MS): Vision-based control of quadrotor UAV </td>
+	<td width="150" align="right" valign="top"> 2013-2014 </td>
+	</tr>
+	
+    <tr> 
+    <td width="150" valign="top">   </td>
+	<td width="500"> Tse-Huai Wu (MS): Vision-based spacecraft formation control </td>
+	<td width="150" align="right" valign="top"> 2011-2013 </td>
+	</tr>
+
+
+
+    <tr>
+    <td width="150" valign="top"> Undergraduate Students </td> 
+	<td width="500"> Chris Poole : Development of multirotor UAV </td>
+	<td width="150" align="right" valign="top">  2015-present </td>
+	</tr>
+
+
+    <tr>
+    <td width="150" valign="top">  </td> 
+	<td width="500"> Kiren Caldwell : Development of user interface for UAV control </td>
+	<td width="150" align="right" valign="top">  2013-2014 </td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top">  </td> 
+	<td width="500"> Ryan Mossbarger: Development of thrust stand </td>
+	<td width="150" align="right" valign="top">  2012-2013 </td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top">  </td> 
+	<td width="500"> John Dougherty:  Development of i2c interface circuit board </td>
+	<td width="150" align="right" valign="top">  2012-2013 </td>
+	</tr>
+
+
+<!--
+    <tr>
+    <td width="150" valign="top"> Thesis Committee </td>
+	<td width="500"> John Dougherty (MS): Laser-based guidance of quadrotor UAV</td>
+	<td width="150" align="right" valign="top"> May 2014 </td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> George Teel (MS): Heated anode cathode arc thruster</td>
+	<td width="150" align="right" valign="top"> May 2014 </td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> Dereck Chiu (MS): Bimodal micro-cathode arc thruster</td>
+	<td width="150" align="right" valign="top"> May 2014 </td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top">  </td>
+	<td width="500"> Jaime Hervas at ERAU (Ph.D): Higher-order nonholonomic systems</td>
+	<td width="150" align="right" valign="top"> Jul 2013 </td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> Paul Moubarak (Ph.D): Reconfigurable multi-directional manipulation</td>
+	<td width="150" align="right" valign="top"> Mar 2013 </td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> TaiSen Zhuang (Ph.D): Micro-cathode thruster for cube satellite propulsion </td>
+	<td width="150" align="right" valign="top"> Dec 2013 </td>
+	</tr>
+
+	
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> Tse-Huai Wu (MS): Spacecraft relative attitude formation tracking</td>
+	<td width="150" align="right" valign="top"> Nov 2012</td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> John Solder (MS): Magnetically enhanced micro-cathode vacuum arc thruster</td>
+	<td width="150" align="right" valign="top"> Jul 2012</td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> Brenton Duffy (Ph.D): Perturbation for the elliptic restricted three-body problem</td>
+	<td width="150" align="right" valign="top"> Mar 2012</td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> Lubos Brieda (Ph.D): Multi-scale simulation of hall thrusters</td>
+	<td width="150" align="right" valign="top"> Mar 2012</td>
+	</tr>
+
+    <tr>
+    <td width="150" valign="top"> </td>
+	<td width="500"> Therese Suaris (Ph.D): Micro-vacuum arc thrusters and frozen orbits </td>
+	<td width="150" align="right" valign="top"> Aug 2011 </td>
+	</tr>
+-->	
+</table>
+
+
+	
+
+<p class="subsection">Teaching Experience</p>
+<ul>
+<table>
+
+    <tr>
+    <td width="550">
+    Average student evaluation : 4.8/5.0<br><br></td>
+	</tr>
+
+
+
+    <tr>
+    <td width="550">
+    MAE3145: Orbital Mechanics and Space Dynamics
+    <br> MAE6292: Special Topic: Applied Nonlinear Control
+    <br> MAE6292: Special Topic: Optimal Control and Estimation
+	<br> MAE6277: Spacecraft Attitude Control
+    <br> MAE6246: Electromechanical Control Systems
+    <br> Department of Mechanical and Aerospace Engineering, The George Washington University<br><br></td>
+    <td width="210" align="right" valign="top">
+    Fall 2011-2016<br>
+    Spring 2012, 2014, 2016<br>
+    Spring 2015<br>
+    Spring 2013, 2017<br>
+    Spring 2013, Fall 2013-2016</td>
+    </tr>
+    
+  <tr>
+    <td width="600">
+    MAE5690: Special Topic: Spacecraft Dynamics and Control
+    <br> MAE5690: Special Topic: Nonlinear Systems
+	<br> MAE4600: Engineering Astrodynamics
+    <br> MAE4242: Aircraft Stability and Control
+    <br> MAE4014: Control Systems
+	<br> MAE2082: Dynamics
+    <br> Department of Mechanical and Aerospace Engineering, Florida Institute of Technology<br><br></td>
+    <td width="160" align="right" valign="top">Spring 2011<br>Fall 2010<br>Fall 2009<br>Fall 2008-2010<br>Spring 2009-2011<br>Spring 2010</td>
+  </tr>
+
+
+
+</table>
+</ul>
+
+
+<p class="subsection">Outreach</p>
+<ul>
+<table>
+
+    <tr>
+    <td width="650">
+    <em>Introduction to Control System Engineering</em><br>
+    Workshop for Robotics Group at Bell Multicultural High School, DC
+    </td>
+    <td width="110" align="right" valign="top">
+    May 2015</td>
+    </tr>
+
+    <tr>
+    <td width="650">
+    <em>Introduction to Control System Engineering</em><br>
+    Workshop for Robotics Group at Bell Multicultural High School, DC
+    </td>
+    <td width="110" align="right" valign="top">
+    May 2014</td>
+    </tr>
+
+    <tr>
+    <td width="650">
+    <em>Introduction to Control System Engineering</em><br>
+    Engineering Summer Camp for K-12 Students, Florida Institute of Technology
+    </td>
+    <td width="110" align="right" valign="top">
+    Jul 2010</td>
+    </tr>
+    
+</table>
+</ul>
+
+
+			
+</article>			
+</div><!-- main -->
+
+    <div id="navbar">
+    <nav>
+    800 22nd St NW, Washington DC 20052 &nbsp; &nbsp; &#8226; &nbsp; &nbsp; 202-994-6749 &nbsp; &nbsp; &#8226; &nbsp; &nbsp; <a href="mailto:tylee@gwu.edu">tylee@gwu.edu</a>
+    </nav>
+    </div>
+
+</div> <!-- /wrap -->
+</body>
+</html>
