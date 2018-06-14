@@ -15,7 +15,7 @@
 <div id="wrap">
 
 <div id="header">
-<img src="gw_port_new.png" width="220">         
+<img src="./Figs/gw_port_new.png" width="220">         
 <div id="logo"> 
 <p align="right"> 
 <font style="font-size:38px; font-weight:100">Flight Dynamics and Control Lab </font> </p>
@@ -42,14 +42,14 @@
 
 <aside>
 	
-<a href="https://www.facebook.com/fdcl.gwu/"><img src="fb.png" height="25"></a>
-<a href="https://www.youtube.com/channel/UCREzO49zrgcepGkLW4Qgn2Q"><img src="YouTube-logo-full_color.png" height="25"></a>
+<a href="https://www.facebook.com/fdcl.gwu/"><img src="./Figs/fb.png" height="25"></a>
+<a href="https://www.youtube.com/channel/UCREzO49zrgcepGkLW4Qgn2Q"><img src="./Figs/YouTube-logo-full_color.png" height="25"></a>
 <br>
-<a href="https://scholar.google.com/citations?user=sBBzntUAAAAJ&hl=en&oi=ao"><img src="google_scholar.png" height="25"></a>
-<a href="https://github.com/fdcl-gwu"><img src="git_hub.jpeg" height="25"></a>
+<a href="https://scholar.google.com/citations?user=sBBzntUAAAAJ&hl=en&oi=ao"><img src="./Figs/google_scholar.png" height="25"></a>
+<a href="https://github.com/fdcl-gwu"><img src="./Figs/git_hub.jpeg" height="25"></a>
 <br><br>
 
-<a href="RS.pdf">Click for Research Statement</a>
+<!-- <a href="RS.pdf">Click for Research Statement</a> -->
 
 <br><br>
 
@@ -62,6 +62,37 @@
 
 <br> <br> Our research is focused on constructing computational geometric methods for dynamics and control of mechanical systems evolving on a nonlinear manifold. The central idea is constructing nonlinear control systems directly on nonlinear manifolds, and verifying their performances numerically by using geometric numerical integrators that preserve the underlying geometric properties of a dynamic system. All of these are expressed in a coordinate-free form to avoid any singularities, ambiguities, and complexities inherent to local parameterizations. These allow us to study non-local, large, and aggressive motions of complex dynamic systems globally in an accurate and efficient fashion over a long period.
 
+<p class="subsection"> *Featured Topic 2018: Matrix Fisher Distribution on SO(3) </p>
+
+What should be a Gaussian distribution for attitudes?
+
+<br><br>
+Gaussian distributions, that are commonly known as the bell curves, are the most celebrated probability distribution in science and engineering. 
+According to the central limit theorem, the sum of a large number of independent random variables tends toward a normal distribution, and the majority of the estimation schemes, such as the Kalman filter, are derived analytically in an explicit form when the relevant random variables are normally distributed. 
+
+<br><br>
+However, attitude evolves on a compact, Lie group, referred to as the special orthogonal group. 
+Consequently, Gaussian distributions defined in the Euclidean space cannot be adopted to attitudes, unless they are adopted to local coordinates heuristically while causing a lot of troubles, such as singularities and complexities. 
+
+<br><br>
+To address these, we propose a probability density for attitude uncertainties, referred to as matrix Fisher distribution that is globally formulated on the special orthogonal group. 
+In fact, this resembles the Gaussian distribution for three-dimensional vectors: the resulting marginal distribution of each body-fixed axis is ellipsoidal on the unit sphere; nine parameters specify the mean attitude, the principal axes of rotations, and the degree of concentration along the principal axis. 
+This is similar to the Gaussian distribution that is defined by the mean, the principal axes, and the lengths of the semimajor axes of Gaussian ellipsoids. 
+However, in contrast, the matrix Fisher distribution is globally formulated on the special orthogonal group without need for local coordinates. 
+
+<br><br>
+Utilizing these, Bayesian attitude estimators and unscented attitude estimators are constructed. 
+It has been illustrates that these are particularly useful for challenging cases that the initial attitude is completely unknown, or single direction measurements are available only. 
+See the following documents and code for details. 
+
+<br><br>
+<div style="margin-left:30px">
+    <ul>
+        <li> T. Lee, "<a href="https://ieeexplore.ieee.org/document/8267261/">Bayesian Attitude Estimation with the Matrix Fisher Distribution on SO(3)</a>," <i> IEEE Transactions on Automatic Control</i> 2018, doi: 10.1109/TAC.2018.2797162 
+        <li> T. Lee, "<a href="https://arxiv.org/abs/1710.03746">Bayesian Attitude Estimation with the Matrix Fisher Distribution on SO(3)</a>," <i>arxiv:1710.03746 </i> 2018
+        <li> <a href="https://github.com/fdcl-gwu/Matrix-Fisher-Distribution"> https://github.com/fdcl-gwu/Matrix-Fisher-Distribution </a>
+    </ul>
+</div>
 
 <p class="subsection"> Geometric Controls on a Manifold</p>
 
@@ -71,69 +102,45 @@ Most of the existing controllers for multibody systems are based on simplified d
 
 <div style="margin-left:30px">
 <ul style="list-style: none">
+    <li> Geometric attitude controls on SO(3)
+    <li> Geometric control for quadrotor unmanned aerial vehicles 
+    <li> Autonomous aerial payload transportation
+    <li> Spacecraft attitude controls
+    <li> Geometric attitude observer
+<!--
 <li class="pubsection">Geometric Attitude Controls on SO(3)</li>
-	<ul style="list-style:none; margin-left:30px">
-	<li> <a href="paper/ACC13.2.pdf">Hybrid control for global exponential stability</a>, 
-		<a href="paper/ACC13.2.pdf">ACC13</a>,
-		IEEE TAC15
-	<li> <a href="paper/ACC11.2.pdf">Almost global exponential stability</a>,
-		<a href="paper/ACC11.2.pdf">ACC11</a>,
-		SCL11
-	<li> <a href="paper/CDC11.2.pdf">Robust adaptive tracking</a>,
-		<a href="paper/CDC11.2.pdf">CDC11</a>,
-		IEEE TCST13
-	<li> <a href="paper/CDC11.1.pdf">Stable manifold</a>,
-		<a href="paper/CDC11.1.pdf">CDC11</a>
-	</ul>
-
+-	<ul style="list-style:none; margin-left:30px">
+        <li> Semi-global smooth exponential control with non-memoryless feedback
+        <li> Hybrid control for global exponential stability
+        <li> Almost global exponential controls
+        <li> Robust adaptive tracking
+        <li> Analysis of stable manifold
+    </ul>
 <li class="pubsection">Geometric Control of Quadrotor UAV</li>
 	<ul style="list-style:none; margin-left:30px">
-	<li> <a href="paper/CDC10.pdf">Geometric tracking control</a>, 
-		<a href="paper/CDC10.pdf">CDC10</a>,
-		IFAC11
-	<li> <a href="paper/ACC12.1.pdf">Nonlinear robust tracking</a>, 
-		<a href="paper/ACC12.1.pdf">ACC12</a>,
-		AJC13
-	<li> <a href="paper/ECC13.pdf">Nonlinear PID control</a>,
-		<a href="paper/ECC13.pdf">ECC13</a>
-	<li> <a href="paper/ACC14.2.pdf">Laser-based guidance for autonomous landing</a>,
-		<a href="paper/ACC14.2.pdf">ACC14</a>
-</ul>
+        <li> Geometric tracking control
+        <li> Nonlinear robust tracking, PID control
+        <li> Adaptive neural network control
+    </ul>
 
 <li class="pubsection">Autonomous Aerial Payload Transportation</li>
 	<ul style="list-style:none; margin-left:30px">
-	<li> <a href="paper/CDC13.1.pdf">Transportation of a point mass</a>
-		<a href="paper/CDC13.3.pdf">CDC13a</a>, <a href="paper/CDC13.1.pdf">CDC13b</a>
-	<li> <a href="paper/ACC14.1.pdf">Transportation of a point mass with flexible cable</a>,
-		<a href="paper/CDC12.1.pdf">CDC12</a>,
-		<a href="paper/ACC14.1.pdf">ACC14</a>
-	<li> <a href="paper/CDC14.1.pdf">Transportation of a rigid body</a>,
-		<a href="paper/CDC14.1.pdf">CDC14</a>
-	<li> <a href="">Transportation of a rigid body with flexible cable</a>,
-		<a href="">ACC15a</a>
-	<li> <a href="">Collision avoidance</a>,
-		<a href="">ACC15b</a>		
-	<li> <a href="paper/CDC14.3.pdf">Adaptive payload transportation</a>,
-		<a href="paper/CDC14.3.pdf">CDC14</a>, IMA15, IEEE TRO15
-</ul>
+        <li> Transportation of a point mass and a rigid body
+        <li> Flexible cable modeling
+        <li> Cooperative transportation with multiple aerial vehicles
+        <li> Adaptive payload transportation
+        <li> Collision avoidance
+    </ul>
 
 <li class="pubsection">Spacecraft Controls</li>
 	<ul style="list-style:none; margin-left:30px">
-	<li> <a href="paper/ACC13.1.pdf">Vision-based formation control</a>, 
-		<a href="paper/ACC12.2.pdf">ACC12</a>,
-		<a href="paper/ACC13.1.pdf">ACC13</a>,
-		<a href="paper/CDC14.2.pdf">CDC14</a>,
-		IEEE TCST14
-	<li> Low-thrust attitude control with ion thruster, IEPC13
-	<li> Retrospective cost adaptive control,
-		AIAA GNC13
-</ul>
+        <li> Vision-based formation control
+        <li> Low-thrust attitude control with ion thruster
+        <li> Retrospective cost adaptive control,
+    </ul>
+-->
 </ul>
 </div>	
-
-
-
-
 
 <br><br>
 
@@ -155,19 +162,19 @@ Most of the existing controllers for multibody systems are based on simplified d
 Computational geometric optimal control approach is to find an optimal control for a dynamic system represented by discrete mechanical systems. This is in contrast to the conventional approach where a discretization appears in the last stage when solving an optimality condition numerically.
 
 <br><br>
-This method has substantial computational advantages. Numerical solutions obtained by discrete mechanics are more faithful to general non-geometric integrators, and consequently more accurate solutions of optimal control problems are obtained. We also find optimal trajectories efficiently as this is free of artificial numerical dissipations introduced by conventional numerical integration schemes.
+This method has substantial computational advantages. Numerical solutions obtained by discrete mechanics are more faithful to general non-geometric integrators, and consequently more accurate solutions of optimal control problems are obtained. We also find optimal trajectories efficiently as this is free of artificial numerical dissipation introduced by conventional numerical integration schemes.
 
 
 <div class="image" style="width:200px; float:left; margin-right:20px; margin-bottom:10px">
-<img src="Fig/FR2.jpg" width="200px">
+<img src="./Figs/FR2.jpg" width="200px">
 <div style="text-align:center">Optimal combinatorial formation reconfiguration of multiple spacecraft</div>
 </div>
 <div class="image" style="padding-top:35px;  width:320px; float:left; margin-right:20px; margin-bottom:10px">
-<img src="Fig/OptTRB_3dii.jpg" width="320px" style="padding-bottom:24px;">
+<img src="./Figs/OptTRB_3dii.jpg" width="320px" style="padding-bottom:24px;">
 <div style="text-align:center">Optimal control of articulated rigid bodies: snapshots of a 180 degrees rotation, achieved by using an internal control torque on a joint</div>
 </div>
 <div class="image" style="padding-top:20px; width:165px; float:left;margin-bottom:10px">
-<img src="Fig/RBPF_NSF0710.jpg" width="165px" style="padding-bottom:7px;">
+<img src="./Figs/RBPF_NSF0710.jpg" width="165px" style="padding-bottom:7px;">
 <div style="text-align:center">Optimal control of connected rigid bodies in a perfect fluid: snapshots of forward swimming </div>
 </div>
 
@@ -189,22 +196,22 @@ Due to these computation advantages, Lie group variational integrators have been
 
  
 <div class="image" style="width:190px; float:left; margin-right:20px; margin-bottom:10px">
-<img src="Fig/1999kw4small.jpg" width="190px" style="padding-top:20px; padding-bottom:17px">
+<img src="./Figs/1999kw4small.jpg" width="190px" style="padding-top:20px; padding-bottom:17px">
 <div style="text-align:center">Near-Earth binary asteroid 66391, collaboration with JPL NASA</div>
 </div>
 
 <div class="image" style="width:170px; float:left; margin-right:20px; margin-bottom:10px">
-<img src="Fig/3drod.jpg" width="170px">
+<img src="./Figs/3drod.jpg" width="170px">
 <div style="text-align:center">Bending dynamics of a slender rod</div>
 </div>
 
 <div class="image" style="width:200px; float:left; margin-right:20px; margin-bottom:10px">
-<img src="Fig/StrPend_NSF0809.jpg" width="200px" style="padding-bottom:13px">
+<img src="./Figs/StrPend_NSF0809.jpg" width="200px" style="padding-bottom:13px">
 <div style="text-align:center">Tethered spacecraft on a circular orbit</div>
 </div>
 
 <div class="image" style="width:140px; float:left; margin-bottom:10px">
-<img src="Fig/3dmd.jpg" width="140px"  style="padding-bottom:24px">
+<img src="./Figs/3dmd.jpg" width="140px"  style="padding-bottom:24px">
 <div style="text-align:center">Molecular dynamics</div>
 </div>
 
@@ -220,7 +227,7 @@ This is to develop computational geometric methods to propagate uncertainties th
 We also developed attitude estimation algorithm directly on the special orthogonal group to avoid complexities, singularities, and ambiguities that appear in other attitude representation such as quaternions and Euler angles.
 
 <div class="image" style="width:800px; float:left; margin-right:20px; margin-bottom:10px; text-align:center">
-<img src="Fig/uprop.png" width="400px" style="padding-top:20px; padding-bottom:17px; ">
+<img src="./Figs/uprop.png" width="400px" style="padding-top:20px; padding-bottom:17px; ">
 <div style="text-align:center">(Advection): the initial uncertainty (left) is propagated along Hamiltonian flows to obtain the sample values of the probability density (center); the propagated uncertainty (right) is reconstructed by using noncommutative harmonic analysis. (Diffusion): Liouville's equation representing the diffusion effects are converted into an ordinary differential equation, which is integrated numerically. (Splitting) the advection approach and the diffusion approach is combined by a splitting technique.
 </div>
 </div>
@@ -229,22 +236,22 @@ We also developed attitude estimation algorithm directly on the special orthogon
 
 
 <div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
-<img src="Fig/NSF14_Diff_1_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+<img src="./Figs/NSF14_Diff_1_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
 </div>
 <div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
-<img src="Fig/NSF14_Diff_5_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+<img src="./Figs/NSF14_Diff_5_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
 </div>
 <div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
-<img src="Fig/NSF14_Diff_9_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+<img src="./Figs/NSF14_Diff_9_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
 </div>
 <div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
-<img src="Fig/NSF14_Diff_13_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+<img src="./Figs/NSF14_Diff_13_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
 </div>
 <div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
-<img src="Fig/NSF14_Diff_17_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+<img src="./Figs/NSF14_Diff_17_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
 </div>
 <div class="image" style="width:120px; float:left; margin-right:5px; margin-bottom:10px">
-<img src="Fig/NSF14_Diff_20_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
+<img src="./Figs/NSF14_Diff_20_CSph.png" width="120px" style="padding-top:20px; padding-bottom:17px">
 </div>
 
 <div style="clear:both; text-align:center">Figure: visualization of the propagated attitude probability density on the unit-sphere</div>
