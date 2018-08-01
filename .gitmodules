@@ -1,3 +1,6 @@
 [submodule "Vitae"]
 	path = Vitae
 	url = https://github.com/tylee-fdcl/Vitae.git
+[submodule "quickstart/themes/ananke"]
+	path = quickstart/themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
